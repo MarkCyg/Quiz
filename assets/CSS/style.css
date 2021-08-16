@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: white;
+   font-family: Helvetica, Arial, sans-serif;
+ }
+
+  /*header*/
+header {
+    font-size: 20px; 
+    padding: 35px 40px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.scores {
+    text-decoration: none;
+    color: #E4A0F0;
+}
+
+  .flex-row {
+    display: flex;
+  }
+
+ .timer {
+    color: black;
+    font-size: 20px; 
+    padding: 0 60px 35px 40px;
+    background-color: white;
+ }
+
+ /*button specs*/
+
+.start {
+  background-color: red;
+  font-size: 65px;
+}
