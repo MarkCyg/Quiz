@@ -31,10 +31,6 @@ header {
     color: #E4A0F0;
 }
 
-  .flex-row {
-    display: flex;
-  }
-
  .timer {
     color: black;
     font-size: 20px; 
@@ -45,6 +41,19 @@ header {
  /*button specs*/
 
 .start {
-  background-color: red;
-  font-size: 65px;
+  padding: 10px 25px;
+  margin: 10% 40%;
+  background-color: green;
+  font-size: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}
+
+
+
+.flex-row {
+  display: flex;
 }

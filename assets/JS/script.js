@@ -1,3 +1,10 @@
+alert("Welcome to digital Quiz!");
+
+
+//button
+
+
+//timer
 i = 60;
 function onTimer() {
   document.getElementById('mycounter').innerHTML = i;
