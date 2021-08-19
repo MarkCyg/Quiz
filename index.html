@@ -9,14 +9,27 @@
 </head>
 
 <body>
+
+    <!------Header for HS and Timer----------->
     <header>
         <h3> 
-            <a href="/" Class="scores">View High Scores</a>
+            <a id="scores" href="#" Class="scores">View High Scores</a>
         </h3> 
-        <div id="mycounter" Class="timer">Timer:</div>
+        <div id="mycounter" Class="timer">
+            <p id="timer">Timer: <span id="countdown">180s</span></p>
+        </div>
     </header>
-
-    <button id="btn1" onclick="onTimer()" class="start">START QUIZ</button>
+    <!-----------Start Button------------------->
+    <nav>
+        <button id="strtbtn" onclick="onTimer()" class="start">START QUIZ</button>
+    </nav>
+    
+    
+    <button id="Abtn" onclick="answer('A')" Class="qbtn">A</button>
+    <button id="Bbtn" onclick="answer('B')" Class="qbtn">B</button>
+    <button id="Cbtn" onclick="answer('C')" Class="qbtn">C</button>
+    <button id="Tbtn" onclick="answer('True')" Class="qbtn">TRUE</button>
+    <button id="Fbtn" onclick="answer('False')" Class="qbtn">FALSE</button>
   
     <script src="assets/JS/script.js"></script>
 </body>
