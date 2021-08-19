@@ -1,4 +1,4 @@
-alert("Welcome to digital Quiz!");
+alert("Hello, Thank you for joining us!");
 
 
 //Variables and whatnot
