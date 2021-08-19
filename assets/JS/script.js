@@ -8,6 +8,9 @@ alert("Hello, Thank you for joining us!");
  const answerC = document.getElementById('Cbtn');
  const answerT = document.getElementById('Tbtn');
  const answerF = document.getElementById('Fbtn');
+ const question = document.querySelector('.question');
+ const answerContainer = document.querySelector('#q-acontainer');
+ 
 
  //Starting the game
  let counter = 180;
@@ -23,5 +26,23 @@ alert("Hello, Thank you for joining us!");
 
  function startGame() {
    startButton.textContent = "Let's Roll";
+   answerContainer.classList.remove('hidden');
+   nextQuestion();
+ };
 
- }
+ function startTimer() {
+   timer = function () {
+     counter--;
+     timerHTMLText.textContent = `${counter}s`;
+     if (counter <= 0){
+       clearInterval(beginCountDown);
+       counter = 0;
+       endGame();
+       alert('GAME OVER');
+     };
+ };
+
+ beginCountDown = setInterval(timer, 1000);
+};
+
+// Questions
